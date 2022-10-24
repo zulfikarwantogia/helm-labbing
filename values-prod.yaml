@@ -5,7 +5,7 @@ replicaCount: 2
 image:
   repository: kmplussmartsystem/test
   pullPolicy: Always
-  tag: prod-1
+  tag: prod-17
 imagePullSecrets: {}
 nameOverride: ""
 fullnameOverride: ""
