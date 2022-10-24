@@ -3,7 +3,7 @@
 # Declare variables to be passed into your templates.
 replicaCount: 2
 image:
-  repository: kmplussmartsystem/test
+  repository: zoeldjian/argocd
   pullPolicy: Always
   tag: prod-18
 imagePullSecrets: {}
@@ -28,11 +28,11 @@ securityContext: {}
 # runAsNonRoot: true
 # runAsUser: 1000
 
-url: fe-dashboard.kmplus.com
+url: coffetalk.smartkmsystem.com
 service:
   type: ClusterIP
   port: 80
-  targetPort: 3000
+  targetPort: 5000
 ingress:
   pathType: Prefix
   enabled: true
@@ -41,36 +41,16 @@ ingress:
     cert-manager.io/cluster-issuer: letsencrypt-prod
     kubernetes.io/tls-acme: "true"
   hosts:
-    - host: "fe-dashboard.kmplus.com"
+    - host: "coffetalk.smartkmsystem.com"
       paths:
         - "/"
   tls:
     - secretName: echo-tls-prod
       hosts:
-        - fe-dashboard.kmplus.com
+        - coffetalk.smartkmsystem.com
 env:
   - name: DB_DATABASE
     value: ""
-  - name: DB_HOST
-    value: "lb-database-1012016df9bc72f0.elb.ap-southeast-1.amazonaws.com"
-  - name: DB_PASSWORD
-    value: "339KTYgWDYk5TvKmmN3uEQHrMKbfnbEp"
-  - name: DB_PORT
-    value: "5001"
-  - name: DB_TIMEZONE
-    value: "UTC"
-  - name: DB_USERNAME
-    value: ""
-  - name: DL_HOST
-    value: "http://awhl-application-asg-1-nlb-f40735dff4ab640c.elb.ap-southeast-1.amazonaws.com"
-  - name: AWHL_API_BASE_URL
-    value: "https://awhl.com"
-  - name: AWHL_V2_URL
-    value: "https://fe-dashboard.kmplus.com"
-  - name: TOKEN_EXPIRED
-    value: "7d"
-  - name: REFRESH_TOKEN_EXPIRED
-    value: "30d"
 resources:
   # We usually recommend not to specify default resources and to leave this as a conscious
   # choice for the user. This also increases chances charts run on environments with little
