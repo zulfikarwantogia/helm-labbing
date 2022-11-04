@@ -28,7 +28,7 @@ securityContext: {}
 # runAsNonRoot: true
 # runAsUser: 1000
 
-url: coffetalk.smartkmsystem.com
+url: pintu.smartkmsystem.com
 service:
   type: ClusterIP
   port: 80
@@ -41,13 +41,13 @@ ingress:
     cert-manager.io/cluster-issuer: letsencrypt-prod
     kubernetes.io/tls-acme: "true"
   hosts:
-    - host: "coffetalk.smartkmsystem.com"
+    - host: "pintu.smartkmsystem.com"
       paths:
         - "/"
   tls:
     - secretName: echo-tls-prod
       hosts:
-        - coffetalk.smartkmsystem.com
+        - pintu.smartkmsystem.com
 env:
   - name: DB_DATABASE
     value: ""
@@ -57,10 +57,10 @@ resources:
   # resources, such as Minikube. If you do want to specify resources, uncomment the following
   # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
   limits:
-    cpu: 250m
-    memory: 128Mi
+    cpu: 50m
+    memory: 54Mi
   requests:
-    cpu: 100m
+    cpu: 50m
     memory: 64Mi
 nodeSelector: {}
 tolerations: []
