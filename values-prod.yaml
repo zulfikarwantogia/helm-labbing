@@ -5,7 +5,7 @@ replicaCount: 2
 image:
   repository: zoeldjian/argocd
   pullPolicy: Always
-  tag: prod-1
+  tag: prod-2
 imagePullSecrets: {}
 nameOverride: ""
 fullnameOverride: ""
