@@ -32,7 +32,7 @@ url: pintu.smartkmsystem.com
 service:
   type: ClusterIP
   port: 80
-  targetPort: 3000
+  targetPort: 4000
 ingress:
   pathType: Prefix
   enabled: true
