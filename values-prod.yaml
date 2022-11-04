@@ -5,7 +5,7 @@ replicaCount: 2
 image:
   repository: zoeldjian/pintu
   pullPolicy: Always
-  tag: prod-10
+  tag: prod-11
 imagePullSecrets: {}
 nameOverride: ""
 fullnameOverride: ""
