@@ -3,9 +3,9 @@
 # Declare variables to be passed into your templates.
 replicaCount: 2
 image:
-  repository: venus/venus-stg
+  repository: kmplusstaging/venus-stg
   pullPolicy: Always
-  tag: venus-stg:b7383d1425516bfee405382654d822f8b5a5e12e
+  tag: venus-stg:9a182c4b9de0a1e5a2ccd03b1cb4f68ad190a397
 imagePullSecrets: {}
 nameOverride: ""
 fullnameOverride: ""
