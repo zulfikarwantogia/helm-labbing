@@ -5,7 +5,7 @@ replicaCount: 2
 image:
   repository: kmplusstaging/venus-alvisual
   pullPolicy: Always
-  tag: venus-alvisual:a639486ea03359398a7a86604e4c26539699cc2e
+  tag: venus-alvisual:977f5ad2ac6282aaa4ebaf45c055948d6e967812
 imagePullSecrets: {}
 nameOverride: ""
 fullnameOverride: ""
