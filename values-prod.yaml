@@ -3,9 +3,9 @@
 # Declare variables to be passed into your templates.
 replicaCount: 2
 image:
-  repository: zoeldjian/pintu
+  repository: kmplusstaging/venus-alvisual
   pullPolicy: Always
-  tag: prod-12
+  tag: 0e03cb78f1149d24cc6a164d54e8bbb1a8622414
 imagePullSecrets: {}
 nameOverride: ""
 fullnameOverride: ""
