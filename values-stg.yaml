@@ -5,7 +5,7 @@ replicaCount: 2
 image:
   repository: kmplusstaging/venus-stg
   pullPolicy: Always
-  tag: venus-stg:12d1a79b3d7476200f3d17082e90c42f3ec82c51
+  tag: 3c1cd6119a69581771d91623e62308564962fede
 imagePullSecrets: {}
 nameOverride: ""
 fullnameOverride: ""
