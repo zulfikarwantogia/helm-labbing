@@ -5,7 +5,7 @@ replicaCount: 2
 image:
   repository: kmplusstaging/venus-prd
   pullPolicy: Always
-  tag: venus-prd:4f7d20a10cad43bf2abffa38d00bdab61a0bf9b5
+  tag: 126b014153efdc1a57e89da828ef31b36511ec89
 imagePullSecrets: {}
 nameOverride: ""
 fullnameOverride: ""
